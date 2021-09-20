@@ -1,0 +1,35 @@
+.callback {
+  padding: 0 10px;
+
+  .container {
+    padding: 30px 10px 48px 10px;
+
+    background-color: #f4f4f4;
+  }
+}
+
+.callback__heading {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+
+  &::before {
+    display: none;
+  }
+}
+
+@media(min-width: $widthDesktop) {
+  .callback {
+    // padding: 80px 60px;
+    .container {
+      padding: 80px 60px;
+    }
+  }
+
+  .callback__heading {
+    max-width: 100%;
+    margin-bottom: 80px;
+
+    text-align: start;
+  }
+}

@@ -1,0 +1,114 @@
+.description {
+  margin-bottom: 2em;
+}
+
+.description__item {
+  margin-bottom: 7px;
+
+  font-size: 14px;
+  line-height: 20.8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--price {
+    font-weight: 600;
+
+    color: $brown-hover;
+  }
+}
+
+.description__wood-list {
+  display: grid;
+
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.description__wood-item {
+  width: 51px;
+  margin-bottom: 13px;
+
+  text-align: center;
+
+  font-size: 11px;
+}
+
+.description__wood-color {
+  width: 51px;
+  height: 51px;
+
+  border-radius: 50%;
+  background-color: $brown;
+}
+
+.description__p {
+  margin-bottom: 10px;
+
+  font-family: $merri;
+  font-size: 16px;
+}
+
+.description__wood-info {
+  margin-bottom: 32px;
+
+  font-size: 12px;
+}
+
+.description__price {
+  margin-bottom: 40px;
+
+  font-family: $merri;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+@media(min-width:1070px) {
+  .description {
+    display: flex;
+
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
+
+  .description__item {
+    width: 100%;
+
+    font-size: 16px;
+  }
+
+  .description__p {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+  }
+
+  .description__wood-list {
+    margin-bottom: 70px;
+
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .description__wood-info {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+  }
+
+  .description__wood-item {
+    width: 60px;
+  }
+
+  .description__wood-color {
+    width: 60px;
+    height: 60px;
+  }
+}
