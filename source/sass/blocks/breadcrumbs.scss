@@ -1,0 +1,52 @@
+.breadcrumbs {
+  display: none;
+
+  margin-bottom: 0;
+}
+
+.breadcrumbs__list {
+  display: flex;
+
+  padding: 40px 0;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+
+  font-size: 16px;
+
+  color: $black;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  margin-right: 43px;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: -20px;
+
+    width: 6px;
+    height: 12px;
+
+    content: '';
+
+    background: url('../img/icons/icon-arrow-black.svg') 0 0 no-repeat;
+  }
+
+  &--active {
+    text-decoration: underline;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: $widthTablet) {
+  .breadcrumbs {
+    display: block;
+  }
+}
